@@ -9,7 +9,7 @@ height: 100%;
 body{
 margin:0;
 padding:0;
-background:#2196f3;
+background: linear-gradient(to left, #fc00ff , #00dbde);
 font-family:"Helvetica Neue",Helvetica, Arial;
 }
 
