@@ -7,6 +7,7 @@
 <link href="tools/style.css" rel="stylesheet" type="text/css" />
 <link href="tools/960.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="css/font-awesome.min.css">
+<script type="text/javascript" src="js/granim.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> 
 <script type="text/javascript" src="js/cufon-yui.js"></script>
 <script type="text/javascript" src="js/Clarendon_LT_Std_700.font.js"></script>
@@ -24,6 +25,7 @@
 
 </script>
 </head>
+<canvas id="canvas-basic"></canvas>
 <body>
 <div id="shim"></div>
 <div id="content">
@@ -52,4 +54,24 @@
 </div>
 
 </body>
+<script type="text/javascript">
+	var granimInstance = new Granim({
+    element: '#canvas-basic',
+    name: 'basic-gradient',
+    direction: 'linear',
+    opacity: [1, 1],
+    isPausedWhenNotInView: true,
+    states : {
+        "default-state": {
+            gradients: [
+                ['#AA076B', '#61045F'],
+                ['#02AAB0', '#00CDAC'],
+                ['#DA22FF', '#9733EE'],
+                ['#EE0979', '#ff6a00'],
+                ['#fc00ff', '#00dbde']
+            ]
+        }
+    }
+});
+</script>
 </html>
